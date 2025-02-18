@@ -9,31 +9,61 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Contact</title>
+
+
+    <style>
+   /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+    </style>
 </head>
 <body>
 
 
-    <div class="contactbar">
-        <div class="container">
-           <ul class="Contactinfo">
-                <li>
-                    <small>Tel: (011) 684 2848</small>
-                </li>
-                <li>
-                    <small>E: flowershop@telkomsa.net</small>
-                </li>
-           </ul>
-
-        </div>
-    </div>
+    
 
 
-    <div class="logobar">
+    <div class="logobar"  >
+
+      <img class="logo2"   src="flower.jpg" alt="Flower shop logo">
        
-          <div class="container">
+          <!--<div class="container" style="background-color: white;">
 
                 <img class="logo"   src="flower.jpg" alt="Flower shop logo">
-          </div>
+          </div>-->
        
     </div>
 
@@ -64,11 +94,107 @@
                   <a href="valentines day.html">Valentines day</a>
                 </div>
               </div> 
-               <a href="#home">PHOTO GALLERY</a>
-               <a href="#news">ABOUT</a>
+               <a href="photo gallery.html">PHOTO GALLERY</a>
+               <a href="about.html">ABOUT</a>
                <a href="#contact">CONTACT</a>
-        </div>
-    </nav>
+          </div>
+      </nav>
     
+   <div class="space">
+
+
+<br>
+<br>
+
+
+<div>
+          <p style="text-align: center;">Our contact number is <b>064 513 3008</b> or <b>012 942 1346.</b></p>
+
+          <br>
+          <br>
+          
+           <p style="text-align: center;">Contact us via email using <b>flowershop@telkomsa.net</b> or by completing the form below:</p>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+</div>
+
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">Phone number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" >
+
+  </form>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<hr style="height:2px;border-width:0;color:gray;background-color:orangered"> 
+
+     <!--footer-->  
+     <footer class="footer">
+      
+      <div class="footerContainer">
+       
+           <img src="flower.jpg" alt="flower image" style="height: 200px; width: 300px;">
+
+           <div class="foot">
+             <b>Shop</b>
+             <br>
+             <a href="bunches.html" style="text-decoration:none;">Bunches</a>
+             <a href="vase.html" style="text-decoration: none;">Vase arrangements</a>
+             <a href="birthday.html" style="text-decoration: none;">Birthday</a>
+             <a href="valentines day.html" style="text-decoration: none;">Valentines day</a>
+
+           </div>
+
+           <div class="foot">
+             <b>About</b>
+             <br>
+             <a href="about.html" style="text-decoration: none;">About Us</a>
+             <a href="contact.html" style="text-decoration: none;">Contact</a>
+             <br>
+             <br>
+           </div>
+
+           <div class="foot">
+             <b>Contact Us</b>
+             <br>
+             <i>E: flowershop@telkomsa.net</i>
+             <i>Cell: +278 123 4567</i>
+             <i>Tel: (011) 684 2848</i>
+             <br>
+
+           </div>
+
+      </div>
+
+ </footer>       
+
 </body>
 </html>

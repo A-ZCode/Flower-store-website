@@ -8,46 +8,75 @@
 
     <link rel="stylesheet" href="style.css">
     
-    <title>Flower Shop</title>
+    <title>Photo gallery</title>
+
+
+<style>
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
 
 </head>
 
 
 
+
 <body>
 
-        <!--<div class="contactbar">
-            <div class="container">
-               <ul class="Contactinfo">
-                    <li>
-                        <small>Tel: (011) 684 2848</small>
-                    </li>
-                    <li>
-                        <small>E: flowershop@telkomsa.net</small>
-                    </li>
-               </ul>
-
-            </div>
-        </div>-->
+        
 
 
-        <div class="logobar">
+  <div class="logobar">
 
-              <img class="logo2"   src="flower.jpg" alt="Flower shop logo">
-           
-              <!--<div class="container">
+    <img class="logo2"   src="flower.jpg" alt="Flower shop logo">
+ 
+    <!--<div class="container">
 
-                    <img class="logo"   src="flower.jpg" alt="Flower shop logo">
-              </div>-->
-           
-        </div>
+          <img class="logo"   src="flower.jpg" alt="Flower shop logo">
+    </div>-->
+ 
+  </div>
 
        
 
         <nav class="backgroundContainer">
 
             <div class="navbar">
-                   <a href="#home">HOME</a>
+                   <a href="index.html">HOME</a>
                    <div class="dropdown">
                     <button class="dropbtn">FLOWERS 
                       <i class="fa fa-caret-down"></i>
@@ -79,63 +108,64 @@
         <div class="imageContainer">
 
             <img class="flowers"   src="fresh-flowers.jpg" alt="Flower image">
-            <div class="centered">Welcome Home</div>
+            <div class="centered">Photo Gallery</div>
 
         </div>
 
-        <div class="textcontainer">
-            <div class="container">
-                   <h1 style="color: orangered;">Based in the heart of Morning Side</h1>
-                   <br>
-                   <p>is the Flower shop with its vibrant and friendly staff who are always available to assist you
-                     to create your dream arrangement or magnificent flower bouquet. We are the blooming best.</p>
-                    <br>
-                    <b>We also stock a wide range of imported orchids, as well as a variety of pot plants. Looking for your favourite 
-                        imported sweets or chocolate, the Melrose Arch Flower Market is the place to visit, we stock a wide range from 
-                        across the world. Wanting to add extra ambience to your occasion our huge range of balloons can surely do the 
-                        trick. Visit our store for a large range of gifts as well as a variety of party accessories.</b>
-          
-            </div>
-<br>
-<br>
+
+
+        <div class="row">
+          <div class="column">
+            <img src="gal1.jpg">
+            <img src="gal2.jpg">
+            <img src="gal3.jpg">
+            <img src="gal5.jpg">
+            <img src="gal6.jpg">
+            <img src="gal7.jpg">
+            <img src="gal8.jpg">
+          </div>
+          <div class="column">
+            <img src="gal9.jpg">
+            <img src="gal10.jpg">
+            <img src="gal11.jpg">
+            <img src="gal12.jpg">
+            <img src="gal13.jpg">
+            <img src="gall1.jpg">
+          </div>
+          <div class="column">
+            <img src="gall2.jpg">
+            <img src="gall3.jpg">
+            <img src="gall4.jpg">
+            <img src="gall5.jpg">
+            <img src="gall6.jpg">
+            <img src="gall7.jpg">
+            <img src="gall8.jpg">
+          </div>
+          <div class="column">
+            <img src="gall9.jpg">
+            <img src="gall10.jpg">
+            <img src="gall11.jpg">
+            <img src="gall12.jpg">
+            <img src="gall13.jpg">
+            <img src="gall14.jpg">
+          </div>
         </div>
 
-        
 
-            <div class="container">
-                 
-                <div class="Parentcontainer">
 
-                          <div style="width: 450px; border-style: solid; border-color: rgb(224, 200, 155);background-color: rgb(238, 222, 195); height: 200px;" >
-                            <br>
-                                     <h2>Friday Special</h2>
-                                     <br>
-                                     <p>Spend more than R250 in store any Friday and receive a free 
-                                        slab of chocolate (Limited to the first 50 customers).</p>
-                          </div>
 
-                         <div>
-                           <!--image-->
-                           <img class="fllowers"   src="flowwer.avif" alt="Flower image">
-                
-                          </div>
-
-                </div>
-            </div>    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>           
-<hr style="height:2px;border-width:0;color:gray;background-color:orangered">
+       
+     <br>
+     <br>
+     <br>
+       
+    <hr style="height:2px;border-width:0;color:gray;background-color:orangered">        
+    <!--footer-->  
      <footer class="footer">
       
          <div class="footerContainer">
           
-                       <div class="foot">
               <img src="flower.jpg" alt="flower image" style="height: 200px; width: 300px;">
-                       </div>
 
               <div class="foot">
                 <b>Shop</b>
