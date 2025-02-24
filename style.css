@@ -71,6 +71,8 @@ body {
   overflow: hidden;
   background-color:green;
   padding-left: 350px;
+  display: flex;
+  align-items: center;
   
 }
 
@@ -359,4 +361,6 @@ padding-right: 10px;
 
 
 }
+
+
 
